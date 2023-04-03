@@ -1,4 +1,4 @@
-package med.voll.api.domain.endereco;
+package med.voll.api.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -12,9 +12,9 @@ public record DadosEndereco(
         @Pattern(regexp = "\\d{8}")
         String cep,
         @NotBlank
-        String cidade,
-        @NotBlank
         String uf,
         String complemento,
-        String numero) {
+        String numero,
+        @NotBlank
+        String cidade) {
 }
