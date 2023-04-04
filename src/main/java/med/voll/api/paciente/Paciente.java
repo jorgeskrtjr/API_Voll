@@ -25,7 +25,11 @@ public class Paciente {
 
     private Endereco endereco;
 
+    private Boolean ativo;
+
+
     public Paciente(DadosCadastroPaciente paciente){
+        this.ativo = true;
         this.cpf = paciente.cpf();
         this.nome = paciente.nome();
         this.email = paciente.email();
@@ -33,4 +37,16 @@ public class Paciente {
         this.endereco = new Endereco(paciente.endereco());
     }
 
+    public void atualizarInformacoes(DadosAtualizacaoPaciente dados) {
+        if(dados.cpf() != null){
+            this.cpf = dados.cpf();
+        }
+        if(dados.nome() != null){
+            this.nome = dados.nome();
+        }
+    }
+
+    public void excluir() {
+        this.ativo = false;
+    }
 }
