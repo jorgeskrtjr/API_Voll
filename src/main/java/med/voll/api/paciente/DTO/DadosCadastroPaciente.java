@@ -1,4 +1,4 @@
-package med.voll.api.paciente;
+package med.voll.api.paciente.DTO;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
