@@ -1,4 +1,4 @@
-package med.voll.api.paciente.DTO;
+package med.voll.api.domain.paciente.DTO;
 
 import jakarta.validation.constraints.NotNull;
 
