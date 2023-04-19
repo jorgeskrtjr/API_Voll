@@ -1,4 +1,4 @@
-package med.voll.api.domain.consulta;
+package med.voll.api.domain.consulta.DTO;
 
 import med.voll.api.domain.medico.Especialidade;
 
