@@ -36,5 +36,5 @@ LIMIT 1
            where 
            m.id = :id
           """)
-    Boolean findAtivoById(Long idMedico);
+    Boolean findAtivoById(Long id);
 }
